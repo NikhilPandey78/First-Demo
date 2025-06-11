@@ -1,0 +1,66 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+function BasicExample() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">Home</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">About Us</Nav.Link>
+            <NavDropdown title="Courses" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1" className="Courses">
+                <span>Technology</span>
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.2">B TECH</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.3">M TECH</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                POLYTECHNIC
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/4.5" className="Courses">
+                <span>Pharmacy</span>
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/5.6">
+                B Pharm
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/6.7">
+                M Pharm
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/7.8">
+                D Pharm
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/8.9" className="Courses">
+                <span>Management</span>
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/9.10">MBA</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#link">Placement</Nav.Link>
+            <Nav.Link href="#link">Gallery</Nav.Link>
+            <Nav.Link href="#link">Research Papers</Nav.Link>
+            <Nav.Link href="#link">Admissions</Nav.Link>
+            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Nav.Link href="#link">Blog</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default BasicExample;
